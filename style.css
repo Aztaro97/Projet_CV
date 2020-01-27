@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+}
+html,body {
+    margin: 0;
+    padding: 0 80px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    background: #ececec;
+}
+
+.page_title {
+    color: #fff;
+    height: 12.5rem;
+    margin: 5rem 9.37rem;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10rem;
+}
+
+.image {
+    position: relative;
+    right: 10.62rem;
+}
+.age {
+    margin:3px;
+    color: yellow;
+    text-align: center;
+}
+.my_name {
+    margin-bottom: 0;
+    letter-spacing: 2px;
+}
+
+.img {
+    border-radius: 50%;
+    border: .5rem solid yellow;
+    height: 16.25rem;
+    width: 16.25rem;
+
+}
+
+/* ///////////    CONTAINER      /////////////*/
+.container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+
+    /* ///////////////////      SIDEBAR LEFT           ///////////////////////////*/
+    .sidebar_left{}
+    .contact {
+        background: #22a6b3;
+        padding: 1.87rem;
+    }
+    .fas {
+        margin-right: .625rem;
+    }
+    .social {
+        list-style: none;
+    }
+    .social > a {
+        text-decoration: none;
+    }
+    .social_link {
+        text-decoration: none;
+        color: initial;
+    }
+    .fab {
+        margin-right:1.875rem;
+        font-size: 2.81rem;
+    }
+
+
+    .Experience {
+        padding: 1.25rem;
+        background: #000;
+        color: #fff;
+        text-align: center;
+    }
+    .experience_section {
+        
+    }
+    
+    /* //////////////// Centres d'interet /////////*/
+    .about {
+        padding: 1.25rem;
+    }
+    .about > h1 {
+        margin-top: 0;
+    }
+    .about_list {
+        list-style: none;
+    }
+    .about_list > li {
+        margin-top: .625rem;
+    }
+
+
+
+
+
+
+
+
+
+    /*//////////////////// SIDEBAR RIGHT  //////////////////////////*/
+    .formation {
+        padding:0 1.25rem;
+    }
+    .formation_content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: .625rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .formation_section {
+        padding: 1.875rem 1.25rem;
+        margin: 1.25rem 0;
+        border-radius: 1.25rem;
+        box-shadow: 1px 1px .625rem #000;
+    }
+    .formation_date {
+        padding: .625rem 1.25rem ;
+        background: #22a6b3;
+        color: #fff;
+        border-radius: .625rem;
+        display: inline-block;
+        position: relative;
+        right: 1.25rem;
+        bottom: 1.875rem;
+    }
+    .formation_detail {
+        text-align: center;
+    }
+
+    .school_name {
+        text-align: center;
+    }
+
+
+
+    /* ------------------------     COMPETENCES   ------------------*/
+    .competences {
+        background: #22a6b3;
+        padding:.625rem 1.25rem 3.75rem 1.25rem;
+    }
+    .competence_s1 > h2 {
+        margin-bottom: 0;
+    }
+
+    .competence_content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.56rem;
+    }
+    .progress {
+        height: 1.56rem;
+        width: 100%;
+        background: #fff;
+        border-radius: .625rem;
+    }
+    .progressbar {
+        height: 100%;
+        line-height: 1.56rem;
+        color: #fff;
+        text-align: center;
+        background: #000;
+
+    }
+
+
+
+
+
+    /* //////////// MEDIA QUERY  /////////////*/
+    @media only screen and (max-width:1208px) {
+        html,body {
+            margin: 0;
+            padding: 0 10px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 13px;
+            background: #ececec;
+        }
+    }
+
+    @media only screen and (max-width:830px) {
+        .page_title {
+            height: 8.5rem;
+        }
+        .title_subscript > h1, .title_subscript > h2 {
+            font-size: 1rem;
+        }
+    }
+    
+    @media only screen and (max-width:712px) {
+        body {
+            font-size: 11px;
+        }
+        .page_title {
+            grid-template-rows: repeat(2, 1fr);
+            border-radius: 0;
+            margin: 0 0 1.2rem 0;
+            padding:0 ;
+        }
+        .image {
+            position: static;
+        }
+        .img {
+            height: 8.25rem;
+            width: 8.25rem;
+        }
+        .container {
+            grid-template-columns: initial;
+            grid-template-rows: repeat(2, 1fr);
+        }
+        .progress {
+            height: 1rem;
+        }
+        .progressbar {
+            line-height: 1rem;
+            text-align: center;
+        }
+    }
+    
