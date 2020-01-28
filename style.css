@@ -72,6 +72,12 @@ html,body {
         margin-right:1.875rem;
         font-size: 2.81rem;
     }
+    .exp_date {
+        color: #22a6b3;
+        font-weight: bold;
+        font-size: 1.4rem;
+        margin: .5rem 0;
+    }
 
 
     .Experience {
@@ -185,15 +191,37 @@ html,body {
             font-size: 13px;
             background: #ececec;
         }
+        .formation_date {
+            width: 100%;
+            right: 0;
+            bottom: 0;
+            font-weight: bold;
+            text-align: center;
+        }
+        .formation_section {
+            padding-top: 0;
+        }
     }
 
     @media only screen and (max-width:830px) {
+        body {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
         .page_title {
             height: 8.5rem;
         }
         .title_subscript > h1, .title_subscript > h2 {
             font-size: 1rem;
         }
+        .school_name {
+            font-size: .8rem;
+        }
+        .formation_detail{
+            font-size: .7rem;
+        }
+        
+
     }
     
     @media only screen and (max-width:712px) {
