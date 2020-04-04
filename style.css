@@ -195,8 +195,8 @@ html,body {
             font-size: 13px;
             background: #ececec;
         }
-        .page_title {
-            
+        .title_subscript > * {
+            text-align: center;
         }
         .title_subscript p {
             font-size: .7rem;
@@ -211,6 +211,28 @@ html,body {
         }
         .formation_section {
             padding-top: 0;
+            border-radius: .2rem;
+        }
+        .formation_content {
+            margin-bottom: 0;
+        }
+        .Experience {
+            margin-bottom: 20px;
+        }
+        .contact {
+            margin-bottom: 20px;
+        }
+        .about {
+            margin-bottom: 20px;
+            box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.603);
+        }
+        .formation {
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.603);
+        }
+        .competences {
+            box-shadow: 2px 2px 40px #ececec
         }
     }
 
@@ -234,10 +256,10 @@ html,body {
         .formation_detail{
             font-size: .7rem;
         }
-        .contact {
-            border-radius: 30px 0;
+        .contact, .Experience {
+            border-radius: 50px 0;
         }
-        .Experience, .competences{border-radius: 0 30px;}
+        .competences{border-radius: 0 50px;}
         
 
     }
@@ -256,8 +278,8 @@ html,body {
             position: static;
         }
         .img {
-            height: 8.25rem;
-            width: 8.25rem;
+            height: 7rem;
+            width: 7rem;
         }
         .container {
             grid-template-columns: initial;
