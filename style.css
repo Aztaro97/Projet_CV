@@ -281,6 +281,9 @@ html,body {
             height: 7rem;
             width: 7rem;
         }
+        .sidebar_right {
+            margin-top: -80px;
+        }
         .container {
             grid-template-columns: initial;
             grid-template-rows: repeat(2, 1fr);
