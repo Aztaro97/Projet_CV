@@ -11,13 +11,16 @@ html,body {
 
 .page_title {
     color: #fff;
-    height: 12.5rem;
+    padding: 1rem;
     margin: 5rem 9.37rem;
     background: #000;
     display: flex;
     align-items: center;
     justify-content: space-around;
     border-radius: 10rem;
+}
+.title_subscript p {
+    text-align: center;
 }
 
 .image {
@@ -28,13 +31,18 @@ html,body {
     font-size: 1.2rem;
     font-weight: 700;
 }
+
+.poste_name {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
 .age {
-    margin:3px;
+    margin:8px;
     color: yellow;
     text-align: center;
 }
 .my_name {
-    margin-bottom: 0;
+    margin: 0;
     letter-spacing: 2px;
 }
 
@@ -71,10 +79,16 @@ html,body {
     .social_link {
         text-decoration: none;
         color: initial;
+        
     }
-    .fab {
+    
+    .social_link i {
         margin-right:1.875rem;
         font-size: 2.81rem;
+        transition: all .3s ease-in-out;
+    }
+    .social_link i:hover {
+        transform: scale(1.3);
     }
     .exp_date {
         color: #22a6b3;
@@ -240,9 +254,6 @@ html,body {
         body {
             padding-top: 30px;
             padding-bottom: 30px;
-        }
-        .page_title {
-            height: 8.5rem;
         }
         .my_name {
             font-size: 7px;
